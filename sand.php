@@ -1,4 +1,4 @@
-<?php
+^[jǺ^r^^[jǺ^r^<?php
 #Learn Security on 
 $ip=$_SERVER['REMOTE_ADDR'];
 
